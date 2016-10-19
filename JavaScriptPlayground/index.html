@@ -1,6 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+
+    <script>
+        function headFunction() {
+            document.getElementById("demo5").innerHTML = "This p was changed in the Head";
+        }
+    </script>
+
     <title></title>
     <meta charset="utf-8" />
 </head>
@@ -56,7 +63,13 @@
     </button>
 
 
+    <p id="demo5">
+        Here is a paragraph I'm going to attempt to change in the Head instead of Body. 
+    </p>
 
+    <button type="button" onclick="headFunction()">
+        Try Me
+    </button>
 
 </body>
 </html>
