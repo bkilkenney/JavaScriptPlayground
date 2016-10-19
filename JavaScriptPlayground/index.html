@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>What can I do with Javascript?</h1>
+
+    <p id="demo">This paragraph will change when you click the button below</p> <!--Creating an HTML Element with the ID of Demo-->
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'TOLD YOU SO!'">Click Me!</button>
+    <!--Get this ID when clicked and
+        change the content from Click Me to Hello
+        JavaScript!-->
+
+    <p>JavaScript can change HTML attributes</p>
+    <p>Here I'm going to change to the src of an HTML attribute</p>
+
+    <button onclick="document.getElementById('myImage').src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulbon.gif'">        <!--First Button-->
+        Turn on the Light
+    </button>
+
+    <img id="myImage" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulboff.gif" style="width:100px" />              <!--I don't have this image so something genric will show up-->
+
+    <button onclick="document.getElementById('myImage').src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulboff.gif'">       <!--Second Button-->
+        Turn off the Light
+    </button>
+
+    <p id="demo2">JavaScript can change the style of an HTML element</p>
+
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize = '50px'">
+        Click Me Now!
+    </button>
+
+
+    <p id="demo3">
+        This paragraph will disappear when you click the button below.
+    </p>
+
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'"> <!--Display: None, will "hide" the paragraph above-->
+    Click Me!
+    </button>
+
+
+    <p>
+    JavaScript can show hidden HTML elements.
+    </p>
+
+    <p id="demo4" style="display:none">
+    I was hiding but here I am!
+    </p>
+
+    <button type="button" onclick="document.getElementById('demo4').style.display='block'">  <!--opposite of above, SHOWING hidden elements-->
+    Click Me!
+    </button>
+
+
+
+
+</body>
+</html>
